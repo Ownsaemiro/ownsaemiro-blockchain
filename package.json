@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "caver-js": "^1.11.0",
+    "caver-js-ext-kas": "^1.12.0"
+  }
+}
