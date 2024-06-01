@@ -1,12 +1,13 @@
 // 라이센스
 // SPDX-License-Identifier: MIT
 
-pragma solidity ^0.8.21;
+pragma solidity ^0.8.25;
 
 // ERC721Enumerable : ERC721의 확장, utility 버전
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
 import "@openzeppelin/contracts/utils/Strings.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
+
 
 contract MintGemToken is ERC721Enumerable, Ownable{
   uint constant public MAX_TOKEN_COUNT = 10000;
@@ -48,7 +49,6 @@ contract MintGemToken is ERC721Enumerable, Ownable{
 
       uint tokenId = totalSupply() + 1;
 
-      // GemTokenData memory randomTokenData = randomGenerator(msg.sender, tokenId);
       // gemTokenData[tokenId] = GemTokenData(randomTokenData.gemTokenRank, randomTokenData.gemTokenType);
       // gemTokenCount[randomTokenData.gemTokenRank - 1][randomTokenData.gemTokenType - 1] += 1;
       // payable(owner()).transfer(msg.value); // NFT 발행시 스마트 컨트랙트의 Owner에게 전송되는 수수료값 설정

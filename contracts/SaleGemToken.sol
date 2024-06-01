@@ -4,7 +4,6 @@
 pragma solidity ^0.8.21;
 
 import "./MintGemToken.sol";
-
 contract SaleGemToken{
   MintGemToken public mintGemToken;
 
