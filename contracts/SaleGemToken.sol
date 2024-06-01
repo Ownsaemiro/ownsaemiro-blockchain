@@ -1,11 +1,10 @@
+// 라이센스
 // SPDX-License-Identifier: MIT
 
-pragma solidity ^0.8.25;
+pragma solidity ^0.8.21;
 
-import "MintGemToken.sol";
+import "./MintGemToken.sol";
 
-// remixd -s . --remix-ide https://remix.ethereum.org
-// https://remix.ethereum.org/?#activate=klaytn-remix-plugin,fileManager
 contract SaleGemToken{
   MintGemToken public mintGemToken;
 
