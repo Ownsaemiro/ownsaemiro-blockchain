@@ -44,8 +44,19 @@
 // require('dotenv').config();
 // const { MNEMONIC, PROJECT_ID } = process.env;
 
+<<<<<<< HEAD
 // const HDWalletProvider = require('@truffle/hdwallet-provider');
 
+=======
+const HDWalletProvider = require('truffle-hdwallet-provider-klaytn');
+// const HDWalletProvider = require('@truffle/hdwallet-provider');
+
+// const repl = require('node:repl');
+
+const env = require('dotenv').config();
+const privateKey = process.env.PRIVATEKEY;
+
+>>>>>>> a5e8223d0b3a0bfde2666d0211a2950b100cee32
 module.exports = {
   /**
    * Networks define how you connect to your ethereum client and let you set the
@@ -58,6 +69,17 @@ module.exports = {
    */
 
   networks: {
+<<<<<<< HEAD
+=======
+    baobab: {
+      provider: () => {
+        return new HDWalletProvider(privateKey, "https://api.baobab.klaytn.net:8651");
+      },
+      network_id: '1001', //Klaytn baobab testnet's network id
+      gas: '8500000',
+      gasPrice: null
+    }
+>>>>>>> a5e8223d0b3a0bfde2666d0211a2950b100cee32
     // Useful for testing. The `development` name is special - truffle uses it by default
     // if it's defined here and no other network is specified at the command line.
     // You should run a client (like ganache, geth, or parity) in a separate terminal

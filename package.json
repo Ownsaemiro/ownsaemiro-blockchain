@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "ownsaemiro-blockchain",
   "version": "1.0.0",
   "description": "Captone_Design",
@@ -20,3 +21,11 @@
     "truffle-hdwallet-provider-klaytn": "^1.4.2"
   }
 }
+=======
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.2",
+    "caver-js": "^1.11.0",
+    "truffle-hdwallet-provider-klaytn": "^1.4.2"
+  }
+}
+>>>>>>> a5e8223d0b3a0bfde2666d0211a2950b100cee32
