@@ -44,13 +44,7 @@
 // require('dotenv').config();
 // const { MNEMONIC, PROJECT_ID } = process.env;
 
-const HDWalletProvider = require('truffle-hdwallet-provider-klaytn');
 // const HDWalletProvider = require('@truffle/hdwallet-provider');
-
-// const repl = require('node:repl');
-
-const env = require('dotenv').config();
-const privateKey = process.env.PRIVATEKEY;
 
 module.exports = {
   /**
@@ -64,14 +58,6 @@ module.exports = {
    */
 
   networks: {
-    baobab: {
-      provider: () => {
-        return new HDWalletProvider(privateKey, "https://api.baobab.klaytn.net:8651");
-      },
-      network_id: '1001', //Klaytn baobab testnet's network id
-      gas: '8500000',
-      gasPrice: null
-    }
     // Useful for testing. The `development` name is special - truffle uses it by default
     // if it's defined here and no other network is specified at the command line.
     // You should run a client (like ganache, geth, or parity) in a separate terminal

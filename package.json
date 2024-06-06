@@ -1,7 +1,22 @@
 {
+  "name": "ownsaemiro-blockchain",
+  "version": "1.0.0",
+  "description": "Captone_Design",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "@openzeppelin/contracts": "^5.0.2",
+    "@klaytn/contracts": "^1.0.6",
     "caver-js": "^1.11.0",
+    "caver-js-ext-kas": "^1.12.0",
+    "solc": "^0.8.21",
+    "truffle": "^5.11.5"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5",
     "truffle-hdwallet-provider-klaytn": "^1.4.2"
   }
 }
