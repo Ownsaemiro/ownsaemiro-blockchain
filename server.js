@@ -126,7 +126,7 @@ const port = 3000;
 
 app.use(express.json());
 
-app.post("/block", async (req, res) => {
+app.post("/api/contract/publish", async (req, res) => {
   try {
     const { seat } = req.body;
 
@@ -175,7 +175,7 @@ app.post("/block", async (req, res) => {
   }
 });
 
-app.post("/block/additional", async (req, res) => {
+app.post("/api/contract/remain-publish", async (req, res) => {
   try {
     const { contract_address, seat, last_ticket } = req.body;
 
